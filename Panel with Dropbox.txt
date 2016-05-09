@@ -1,7 +1,5 @@
 /*
 	Chapter 6:	Buttons
-	Programmer: SOUK VEOPASEUTH
-	Date: 11/12/14
 	Filename:	Buttons.java
 	Purpose: Learn how to enhance a frame from a frame code
 */
