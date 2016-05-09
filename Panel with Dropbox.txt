@@ -1,0 +1,127 @@
+/*
+	Chapter 6:	Buttons
+	Programmer: SOUK VEOPASEUTH
+	Date: 11/12/14
+	Filename:	Buttons.java
+	Purpose: Learn how to enhance a frame from a frame code
+*/
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class Buttons extends Frame implements ActionListener,ItemListener
+{
+    
+    
+	public Buttons()
+	{
+		//set the layout
+		setLayout(new BorderLayout(20,5));
+		
+      	//Creating button w/ActionListener
+      	Button North = new Button("Red");
+      	North.addActionListener(this);
+      	
+      	Button South = new Button("Yellow");
+      	South.addActionListener(this);
+      	
+      	Button East = new Button("Cyan");
+      	East.addActionListener(this);
+      	
+      	Button West = new Button("Magenta");
+      	West.addActionListener(this);
+      	
+      	//Creating dropbox w/ItemListener
+      	Choice Color = new Choice();
+      	Color.addItemListener(this);
+      	
+      	//Adding into dropbox
+      	Color.add("Red");
+      	Color.add("Yellow");
+      	Color.add("Cyan");
+      	Color.add("Magenta");
+      	Color.add("White");
+      	
+      	//Add buttons to frame
+		add(North, BorderLayout.NORTH);
+		add(South, BorderLayout.SOUTH);
+		add(East, BorderLayout.EAST);
+		add(West, BorderLayout.WEST);
+		
+		//Add dropbox to frame
+		add(Color, BorderLayout.CENTER);
+
+		//override the windowClosing event
+		addWindowListener(
+			new WindowAdapter()
+				{
+				public void windowClosing(WindowEvent e)
+					{
+					   System.exit(0);
+					}
+				}
+		);
+
+	}
+
+   	public static void main(String[] args)
+   	{
+	   	// set frame properties
+		Buttons f = new Buttons();
+      	f.setTitle("Border Application");
+      	f.setBounds(200,200,300,300);
+      	f.setBackground(Color.RED);
+	    f.setVisible(true);
+   }
+   
+   public void actionPerformed(ActionEvent e)
+   {
+       String arg = e.getActionCommand();
+       if (arg == "Red"){
+           setBackground(Color.RED);
+        }
+       
+       if (arg == "Yellow"){
+           setBackground(Color.YELLOW);
+        }
+        
+       if (arg == "Cyan"){
+           setBackground(Color.CYAN);
+        }
+       
+       if (arg == "Magenta"){
+           setBackground(Color.MAGENTA);
+        }
+        
+       if (arg == "White"){
+           setBackground(Color.WHITE);
+        }
+        
+    }
+   
+    public void itemStateChanged(ItemEvent ie)
+    {
+        String arg = (String)ie.getItem();//to get from dropbox list
+        
+        if (arg == "Red"){
+            setBackground(Color.RED);
+        }
+        
+        if (arg == "Yellow"){
+            setBackground(Color.YELLOW);
+        }
+      
+        if (arg == "Cyan"){
+            setBackground(Color.CYAN);
+        }
+        
+        if (arg == "Magenta"){
+            setBackground(Color.MAGENTA);
+        }
+        
+        if (arg == "White"){
+            setBackground(Color.WHITE);
+        }
+    }
+}

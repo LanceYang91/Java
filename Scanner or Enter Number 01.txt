@@ -1,0 +1,56 @@
+Scanner 
+
+Functions:
+
+Able to type in number then press ENTER to function.
+
+---------
+
+"Scanner "scanner name" = new scanner (system.in);"
+
+---------
+
+"int (name of int) = scan.nextInt();"
+	to get input
+
+-----
+
+[CODE]=
+
+import java.util.Scanner;
+class program
+{
+    public static void main(String[ ] args)
+    {
+        Scanner scanner = new Scanner( System.in );
+        System.out.println("How many times do you want print Fun?");
+        int loopTimes = scanner.nextInt ();
+        int i = 0;
+        while( i < loopTimes )
+        {
+        i++;
+        System.out.println("Loop number " + i + ". Fun!");
+        }
+    }    
+}
+
+--------
+
+[CODE] V.2
+
+import java.util.Scanner;
+class program
+{
+    public static void main(String[ ] args)
+    {
+        Scanner program = new Scanner( System.in );
+        System.out.println("How many times do you want print Hi?");
+        int loop = program.nextInt ();
+        int i = 0;
+        while( i < loop )
+        {
+        i++;
+        System.out.println("Loop number " + i + ". Hi!");
+        }
+    }    
+}

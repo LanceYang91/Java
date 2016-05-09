@@ -1,0 +1,114 @@
+[RandomNumber Generator]
+
+---------------------------------------
+
+public class Random
+{
+    public int randomNumber;
+    
+    public Random()
+    {
+        randomNumber = (int)(52*Math.random()+1);
+        System.out.println(randomNumber);
+    }
+}
+    
+            
+------------------------------------------------
+
+
+public class Random
+{
+    public int randomNumber;
+    
+    public Random()
+    {
+        for(int x = 0; x < 6; x++){
+        randomNumber = (int)(52*Math.random()+1);
+        System.out.println(randomNumber);
+    }
+        randomNumber = (int)(1*Math.random());
+        System.out.println("");
+        System.out.println(randomNumber);
+        
+   }
+    
+}           
+
+
+----------------------------------------------------
+
+public class Random
+{
+    public int randomNumber;
+    
+    public Random()
+    {
+        for(int x = 0; x < 6; x++){
+        randomNumber = (int)(52*Math.random()+1);
+        System.out.println(randomNumber);
+    }
+        randomNumber = (int)(5*Math.random()+4);
+        System.out.println("");
+        System.out.println(randomNumber);
+        if (randomNumber == 5)
+            System.out.println("YOU GOT 5 ON IT!!!");
+   }
+    
+}           
+
+----------------------------------------
+
+
+public class Random
+{
+    public int randomNumber;
+    
+    public Random()
+    {
+        for(int x = 0; x < 6; x++)
+        {
+         randomNumber = (int)(52*Math.random()+1);
+         System.out.println(randomNumber);
+        
+         }
+         System.out.println("");
+        for(int a = 0; a < 10; a++)
+        {
+          randomNumber = (int)(5*Math.random()+1);
+         
+          System.out.println(randomNumber);
+        if (randomNumber == 5)
+            System.out.println("YOU GOT 5 ON IT!!!");
+        }
+   }
+    
+}           
+
+
+------------------------------------------
+
+public class Random
+{
+    public int randomNumber;
+    
+    public Random()
+    {
+        for(int x = 0; x < 6; x++)
+        {
+         randomNumber = (int)(52*Math.random()+1);
+         System.out.println(randomNumber);
+        
+         }
+         System.out.println("");
+        for(int a = 0; a < 10; a++)
+        {
+          randomNumber = (int)(5*Math.random()+1);
+         
+          
+        if (randomNumber == 5)
+            System.out.println("YOU GOT 5 ON IT!!!");
+        }
+   }
+    
+}           
