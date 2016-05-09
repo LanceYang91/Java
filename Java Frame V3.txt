@@ -1,6 +1,4 @@
 /**
- * NAME: SOUK VEOPASEUTH
- * DATE: 11/15/14
  * PURPOSE: CODE Application that allow user to calculate expected 
  *    cost of trip as follow:
  *    
