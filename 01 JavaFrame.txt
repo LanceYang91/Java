@@ -1,0 +1,16 @@
+import javax.swing.*;
+
+
+public class JavaFrame {
+	
+	public static void main (String[] args){
+		
+		//create the frame
+		JFrame frame = new JFrame("I am the title of the frame");
+		frame.setVisible(true);
+		frame.setSize(600, 400);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}//end of main
+	
+}//end of JavaFrame
