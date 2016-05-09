@@ -1,0 +1,33 @@
+import javax.swing.*;
+
+public class JavaFrame {
+	
+	public static void main (String[] args){
+		
+		//create the frame
+		JFrame frame = new JFrame("I am the title of the frame");
+		frame.setVisible(true);
+		frame.setSize(600, 400);
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//create the panel
+		JPanel panel = new JPanel();
+		
+		//add panel to frame
+		frame.add(panel);
+		
+		//create a text,
+		// then add to panel.
+		JLabel text = new JLabel("Hello!");
+		panel.add(text);
+		
+		//create a button,
+		//	then add to panel.
+		JButton button = new JButton("BUTTON");
+		panel.add(button);
+		
+		
+	}//end of main
+	
+}//end of JavaFrame

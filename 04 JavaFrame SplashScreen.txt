@@ -1,0 +1,72 @@
+import javax.swing.*;
+
+public class SplashScreen {
+
+	
+	//the brain of the programmed code
+	public static void main (String[] args){
+		
+		//create two functions
+		screen1();
+		screen2();
+		
+	}//end of main
+	
+	//function 1
+	public static void screen1(){
+		
+		//create a frame
+		JFrame frame1 = new JFrame("I am frame 1");
+		frame1.setVisible(true);
+		frame1.setSize(600, 400);
+		frame1.setResizable(false);
+		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//create the panel	
+		JPanel panel1 = new JPanel();
+		
+		//add panel to frame
+		frame1.add(panel1);
+		
+		//create text, 
+			//add to panel
+		JLabel text1 = new JLabel("Splash");
+		panel1.add(text1);
+		
+		//set timer
+		try{
+			Thread.sleep(2000);
+		}catch(Exception e){
+			
+		}
+		
+		//dispose of frame 1
+		frame1.setVisible(false);
+		frame1.dispose();
+		
+	};//end of screen1()
+	
+	//function 2
+	public static void screen2(){
+		
+		//create a frame
+		JFrame frame2 = new JFrame("I am frame 2");
+		frame2.setVisible(true);
+		frame2.setSize(600, 400);
+		frame2.setResizable(false);
+		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+		//create the panel	
+		JPanel panel1 = new JPanel();
+				
+		//add panel to frame
+		frame2.add(panel1);
+				
+		//create text, 
+			//add to panel
+		JLabel text1 = new JLabel("screen2");
+		panel1.add(text1);
+				
+	};//end of screen2()
+	
+}//end of SplashScreen class

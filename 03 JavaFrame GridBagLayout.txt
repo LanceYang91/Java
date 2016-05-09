@@ -1,0 +1,52 @@
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.*;
+
+public class JavaFrame {
+	
+	public static void main (String[] args){
+		
+		//create the frame
+		JFrame frame = new JFrame("I am the title of the frame");
+		frame.setVisible(true);
+		frame.setSize(600, 400);
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//create the panel
+			//add new GridBagLayout() in JPanel
+		JPanel panel = new JPanel(new GridBagLayout());
+		
+		//add panel to frame
+		frame.add(panel);
+		
+		//create gridlayout contraint
+		GridBagConstraints c = new GridBagConstraints();
+		
+		//create a text,
+			//create grid values x and y 
+			//then add to panel.
+		JLabel text = new JLabel("Number 1");
+		c.gridx = 2;
+		c.gridy = 2;
+		panel.add(text, c);
+		
+		JLabel text2 = new JLabel("Number 2");
+		c.gridx = 1;
+		c.gridy = 1;
+		panel.add(text2, c);
+		
+		JLabel text3 = new JLabel("Number 3");
+		c.gridx = 3;
+		c.gridy = 3;
+		panel.add(text3, c);
+		
+		JLabel text4 = new JLabel("Number 4");
+		c.gridx = 1;
+		c.gridy = 4;
+		panel.add(text4, c);
+		
+	}//end of main
+	
+}//end of JavaFrame
